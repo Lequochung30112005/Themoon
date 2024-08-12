@@ -1,0 +1,65 @@
+body{
+    background-image: url('https://media.istockphoto.com/id/1365312463/photo/modern-cafe-restaurant-interior-with-yellow-chair-against-window-with-city-view.webp?b=1&s=170667a&w=0&k=20&c=4fsFjcnw_KeD44b4Z2BebzE36QwJ8smsvdWEsbicDdI=') ,;
+    background-size: cover;
+    background-position-y:-200px ;
+  
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo img{
+    max-width: 50px;
+    height: auto;
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a{
+    color: aliceblue;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+.sub-menu{
+    display: none;
+}
+#main-menu ul.sub-menu{
+   
+    position: absolute;
+    background-color: black;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid #5f5a5a;
+    display: none;
+}
+#main-menu li:hover ul.sub-menu{
+    display:block;
+}
+
+#main-menu ul.sub-menu a{
+   
+    padding: 8px 15px;
+    border-bottom: 1px solid #333;
+}
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid #333;
+}
+#main-menu ul.sub-menu li:last-child a{
+    border:none;
+}
